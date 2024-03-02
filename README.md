@@ -1,4 +1,3 @@
-Certainly! Below is a README template for your FastAPI chess move calculation service. This README provides an overview of the service, how to set it up, and how to use it. You might need to adjust paths, environment setups, or details specific to your deployment or development environment.
 
 ---
 
@@ -23,8 +22,8 @@ The Chess Move Calculator API is a FastAPI-based service designed to calculate s
 1. **Clone the repository:**
 
 ```bash
-git clone https://your-repository-url.git
-cd your-repository-directory
+git clone https://github.com/Naveenkumar1405/Infilect_Task.git
+cd infilect
 ```
 
 2. **Install dependencies:**
@@ -43,12 +42,12 @@ This command starts the server on `localhost` with port `8000` and enables live 
 
 ## Usage
 
-The API provides endpoints for each chess piece type (Knight, Rook, Bishop, Queen) at `/chess/{piece_name}`, where `{piece_name}` is replaced by the name of the piece you are calculating moves for (e.g., `/chess/knight`).
+The API provides endpoints for each chess piece type (Knight, Rook, Bishop, Queen) at `/chess/<slug>`, where `<slug>` is replaced by the name of the piece you are calculating moves for (e.g., `/chess/knight`).
 
 ### Request Format
 
 - **Method:** POST
-- **URL:** `http://localhost:8000/chess/{piece_name}`
+- **URL:** `http://localhost:8000/chess/queen`
 - **Headers:** `Content-Type: application/json`
 - **Body:**
 
